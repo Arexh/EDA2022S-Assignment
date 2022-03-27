@@ -48,7 +48,7 @@ module seq_detector_tb;
     #20 data = 1'b1;
     #20 data = 1'b1;
     #20 data = 1'b0;
-    #40 rst_n = 1'b0;
+    #80 rst_n = 1'b0;
     #100 $finish;
   end
 

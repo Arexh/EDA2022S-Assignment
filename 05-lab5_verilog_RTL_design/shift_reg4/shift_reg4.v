@@ -15,7 +15,7 @@ always @(posedge clk or negedge rst_n)
 begin
     if (!rst_n)
         q <= 4'b0;
-    else if(!load)
+    else if (!load)
         q <= data;
     else
         q <= {q[0], q[3:1]};

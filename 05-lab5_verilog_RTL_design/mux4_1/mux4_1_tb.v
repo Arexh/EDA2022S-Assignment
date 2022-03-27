@@ -27,7 +27,7 @@ module mux4_1_tb;
     #10 in1 = 2;
     #10 sel = 3;
     #10 in4 = 1;
-    #10 sel = 0;
+    #10 sel = 2;
     #10 $finish;
   end
 
