@@ -1,0 +1,130 @@
+0 
+32
++itf+/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/vcsdp.tab
++memcbk
++v2k
++vcsd
++vpi
+-Mamsrun=
+-Masflags=--32
+-Mcc=gcc
+-Mcfl= -pipe -m32 -O -I/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -m32 -m32 -rdynamic
+-Mobjects= /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libvirsim.so /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/liberrorinf.so /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libsnpsmalloc.so /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libvfs.so
+-Mout=testsimv
+-Msaverestoreobj=/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/vcs_save_restore_new.o
+-Msyslibs=/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/ctype-stubs_32.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -m32 -I/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/include
+-debug_access+all+bc
+-debug_region+cell
+-gen_obj
+-l
+-o testsimv
+-picarchive
+-sverilog
+./adder32.v
+./adder32_tb_random.v
+/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/bin/vcs1
+com_random_1646641033.log
+83
+toolspath=/home/eda_tools/Synopsys
+sysc_uni_pwd=/home/EDA/eda14/03-lab3_logic_simulation/vcs_lab/lab01_adder/sim/vtb/adder32
+XLINX_BNN_ROOT=/home/students/stu1/PYNQ/BNN-PYNQ/bnn/src
+XILINX_VIVADO=/home/eda_tools/Xilinx/Vivado/2018.2
+XILINX_QNN_ROOT=/home/students/stu1/PYNQ/QNN-MO-PYNQ/qnn/src/network
+XILINX_BNN_ROOT=/home/students/stu1/PYNQ/BNN-PYNQ/bnn/src
+XDG_SESSION_ID=4975
+XDG_RUNTIME_DIR=/run/user/1158
+VSCODE_IPC_HOOK_CLI=/run/user/1158/vscode-ipc-f3a9801c-e791-4dd4-b049-534bfa9da2ac.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1158/vscode-git-f83f59b63d.sock
+VSCODE_GIT_ASKPASS_NODE=/home/EDA/eda14/.vscode-server/bin/b5205cc8eb4fbaa726835538cd82372cc0222d43/node
+VSCODE_GIT_ASKPASS_MAIN=/home/EDA/eda14/.vscode-server/bin/b5205cc8eb4fbaa726835538cd82372cc0222d43/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=32
+VIVADOHLS_INCLUDE_PATH=/home/eda_tools/Xilinx/Vivado/2018.2/include/hls
+VENDOR=unknown
+VCS_LOG_FILE=com_random_1646641033.log
+VCS_HOME=/home/eda_tools/Synopsys/vcs/O-2018.09-SP1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux
+VCS_AMD_PURE32=1
+UNAME=/bin/uname
+TOOL_HOME=/home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux
+TERM_PROGRAM_VERSION=1.65.0
+TERM_PROGRAM=vscode
+SYNOPSYS_LC_ROOT=/home/eda_tools/Synopsys/lc/O-2018.06-SP4/bin
+SYNOPSYS=/home/eda_tools/Synopsys/lc/O-2018.06-SP4/bin
+SSV_HOME=/home/eda_tools/Cadence/SSV14.21_s062
+SSH_CONNECTION=10.16.68.222 52608 192.168.31.217 22
+SSH_CLIENT=10.16.68.222 52608 22
+SSH_AUTH_SOCK=/run/user/1158/vscode-ssh-auth-sock-918292213
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SOCE_HOME=/home/eda_tools/Cadence/EDI14.21_s062
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+RISCV=/home/students/stu1/toolchain/riscv_toolchain
+RC_HOME=/home/eda_tools/Cadence/RC14.20_s016
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+QRC_HOME=/home/eda_tools/Cadence/EXT14.1.5
+PVEHOME=/home/eda_tools/Cadence/PVS14.1.3
+PASHOME=/home/eda_tools/Cadence/PAS3.05
+OVA_UUM=0
+OSTYPE=linux
+NSIM_HOME=/home/eda_tools/ARC/nSIM/nSIM
+MMSIMHOME=/home/eda_tools/Cadence/MMSIM1311ISR10
+MMSIM=/home/eda_tools/Cadence/MMSIM1311ISR10
+MGLS_LIC_FILE=27050@serveric
+MGLS_LICENSE_FILE=27050@serveric
+MGC_HOME=/home/eda_tools/Mentor/cal_2013.4_15.12/aoi_cal_2013.4_37.29
+MFLAGS=
+METAWARE_ROOT=/home/eda_tools/ARC/MetaWare
+MAKELEVEL=1
+MAKEFLAGS=
+LIC=27050@serveric
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_HOME=/home/eda_tools/Synopsys/lc/O-2018.06-SP4
+LC_ALL=C
+IES_HOME=/home/eda_tools/Cadence/INCISIV132s010
+HOSTTYPE=x86_64-linux
+GROUP=ASIC
+GIT_ASKPASS=/home/EDA/eda14/.vscode-server/bin/b5205cc8eb4fbaa726835538cd82372cc0222d43/extensions/git/dist/askpass.sh
+EXT_HOME=/home/eda_tools/Cadence/EXT14.1.5
+ET_HOME=/home/eda_tools/Cadence/ET14
+ETS_HOME=/home/eda_tools/Cadence/ETS-13.14-s017
+CON_HOME=/home/eda_tools/Cadence/CONFRML141_p100
+COLORTERM=truecolor
+CICHOME=/home/eda_tools/Cadence/IC617ISR2
+CDS_XVNC_TENBASE=+
+CDS_Netlisting_Mode=Analog
+CDS_LIC_FILE=27050@serveric
+CDS_AUTO_64BIT=ALL
+CDSROOT=/home/eda_tools/Cadence/SPB166S021
+CDSHOME=/home/eda_tools/Cadence/IC617ISR2
+CALIBRE_HOME=/home/eda_tools/Mentor/cal_2013.4_15.12/aoi_cal_2013.4_37.29
+ASSURAHOME=/home/eda_tools/Cadence/ASSURA413H1_615
+ASSURA=/home/eda_tools/Cadence/ASSURA413H1_615
+ASI_HOME=/home/eda_tools/Cadence/ASI/Update3/
+AMSHOME=/home/eda_tools/Cadence/INCISIV132s010
+AMS=/home/eda_tools/Cadence/INCISIV132s010
+0
+3
+1646640498 ./adder32_tb_random.v
+1646639405 ./adder32.v
+1543552077 /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/vcsdp.tab
+4
+1543553330 /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libvirsim.so
+1543552586 /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/liberrorinf.so
+1543552559 /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libsnpsmalloc.so
+1543552955 /home/eda_tools/Synopsys/vcs/O-2018.09-SP1/linux/lib/libvfs.so
+1646641035 testsimv.daidir
+-1 partitionlib
