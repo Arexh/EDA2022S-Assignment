@@ -1,0 +1,11 @@
+Command: /home/EDA/eda14/04-lab4_logic_simulation2/vcs_lab/lab04/sim/vtb/cnt10/./simv -l sim.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-SP1; Runtime version O-2018.09-SP1;  Mar 15 08:58 2022
+VCD+ Writer O-2018.09-SP1 Copyright (c) 1991-2018 by Synopsys Inc.
+$finish called from file "./cnt10_tb.v", line 58.
+$finish at simulation time                41000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 410000 ps
+CPU Time:      0.380 seconds;       Data structure size:   0.0Mb
+Tue Mar 15 08:58:11 2022
