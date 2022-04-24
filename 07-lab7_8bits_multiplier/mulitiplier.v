@@ -25,8 +25,20 @@ reg [2 * WIDTH - 1:0] product;
 reg [2:0] count;
 reg [1:0] cur_state, next_state;
 reg signed_bit;
+// state switch
+always@(*)
+begin
+    case (cur_state)
+        // when start is enable, move to PRODUCT_STATE
+        LOAD_STATE: next_state = start ? PRODUCT_STATE : LOAD_STATE;
+        // when count reach WIDTH - 1, that means production is done
+        // then move to DONE_STATE
+        PRODUCT_STATE: next_state = count == WIDTH - 1 ? DONE_STATE : PRODUCT_STATE;
+    endcase
+end
 // reset all variables when rst_n = 0
 // otherwise transfer current state
+// and run logic for each state
 always @ (posedge clk or negedge rst_n)
 begin
     if (!rst_n)
@@ -43,24 +55,6 @@ begin
     else
     begin
         cur_state <= next_state;
-    end
-end
-// state switch
-always@(*)
-begin
-    case (cur_state)
-        // when start is enable, move to PRODUCT_STATE
-        LOAD_STATE: next_state = start ? PRODUCT_STATE : LOAD_STATE;
-        // when count reach WIDTH - 1, that means production is done
-        // then move to DONE_STATE
-        PRODUCT_STATE: next_state = count == WIDTH - 1 ? DONE_STATE : PRODUCT_STATE;
-    endcase
-end
-// logic for each state
-always@(posedge clk)
-begin
-    if (rst_n)
-    begin
         case (cur_state)
             LOAD_STATE:
             begin
