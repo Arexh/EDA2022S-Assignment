@@ -42,46 +42,29 @@ source scripts/opt_ctrl.tcl
 source scripts/zic_timing.tcl
 exec cat zic.timing
 
-remove_ideal_network [get_ports scan_en]
+# remove_ideal_network [get_ports scan_en]
 
-save_mw_cel -as RISC_CHIP_data_setup
+save_mw_cel -as MULTIPLIER_data_setup
 
 ######################################################################
 # Initialize Floorplan
 ######################################################################
 # Create corners and P/G pads and define all pad cell locations:
-source -echo scripts/pad_cell_cons.tcl
+source -echo scripts/io_constraints.tcl
 
-create_floorplan -core_utilization 0.8 -left_io2core 30.0 -bottom_io2core 30.0 -right_io2core 30.0 -top_io2core 30.0
+create_floorplan -control_type width_and_height -core_width 100 -core_height 100
 
-insert_pad_filler -cell "pfeed10000 pfeed05000 pfeed02000 pfeed01000 pfeed00500 pfeed00200 pfeed00100 pfeed00050 pfeed00010 pfeed00005"
-
+# Connect power ground
 source -echo scripts/connect_pg.tcl
-
-create_pad_rings
-
-# Use the following script to set the macro placement after using the GUI to manually place PLLs and CLK_MUL.
-source -echo scripts/preplace_macros.tcl
-
-source -echo scripts/keepout.tcl
-
-set_dont_touch_placement [all_macro_cells]
-
-
-### Build the power plan structure
+# Build power plan structure
 source -echo scripts/pns.tcl
-
-commit_fp_rail
-
-preroute_instances
-preroute_standard_cells -fill_empty_rows -remove_floating_pieces
 
 set_pnet_options -complete "METAL4 METAL5"
 
 remove_placement -object_type standard_cell
 write_def -version 5.6 -placed -all_vias -blockages  -routed_nets -specialnets -rows_tracks_gcells -output design_data/ORCA.def
 
-save_mw_cel -as RISC_CHIP_floorlplaned
+save_mw_cel -as MULTIPLIER_floorlplaned
 
 ############################################################
 # Perfom placement and check congestion
@@ -89,7 +72,7 @@ save_mw_cel -as RISC_CHIP_floorlplaned
 place_opt
 redirect -tee ./reports/place_opt.timing {report_timing}
 report_congestion -grc_based -by_layer -routing_stage global 
-save_mw_cel -as RISC_CHIP_placed
+save_mw_cel -as MULTIPLIER_placed
 
 ############################################################
 # Perfom clock tree synthesis
@@ -99,7 +82,7 @@ set_fix_hold [all_clocks]
 clock_opt
 redirect -tee ./reports/clock_opt.timing {report_timing}
 # GUI action only: "Color By Clock Trees"
-save_mw_cel -as RISC_CHIP_cts
+save_mw_cel -as MULTIPLIER_cts
 
 ############################################################
 # Perfom routing
@@ -108,10 +91,7 @@ route_opt
 report_timing > ./reports/route_opt.timing
 report_timing -delay min > ./reports/route_opt_min.timing
 report_design -physical
-#write_verilog ./results/RISC_CHIP.gv
-#source scripts/tie.tcl
-#route_detail
-#route_eco
 change_names -rules verilog -hierarchy
-write_verilog ./results/RISC_CHIP.gv
-save_mw_cel -as RISC_CHIP_routed
+write_verilog ./results/MY_MULTIPLER.gv
+write_stream -format gds -lib_name $my_mw_lib -cells $top_design ./results/MY_MULTIPLER.gds
+save_mw_cel -as MULTIPLIER_routed
