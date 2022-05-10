@@ -42,8 +42,6 @@ source scripts/opt_ctrl.tcl
 source scripts/zic_timing.tcl
 exec cat zic.timing
 
-# remove_ideal_network [get_ports scan_en]
-
 save_mw_cel -as MULTIPLIER_data_setup
 
 ######################################################################
@@ -95,3 +93,4 @@ change_names -rules verilog -hierarchy
 write_verilog ./results/MY_MULTIPLER.gv
 write_stream -format gds -lib_name $my_mw_lib -cells $top_design ./results/MY_MULTIPLER.gds
 save_mw_cel -as MULTIPLIER_routed
+exit
