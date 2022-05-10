@@ -1,0 +1,26 @@
+# step2
+create mw_lib $my_mw_lib -open -technology $tech_file \
+    -mw_reference_library "$mw_path/sc $mw_path/io $mw_path/ram16x128"
+
+# step3
+import_designs $verilog_file \
+    -format verilog \
+    -top $top_design
+
+# step4
+set_tlu_plus_files \
+    -max_tluplus $tlup_max \
+    -min_tluplus $tlup_min \
+    -tech2itf_map $tlup_map
+
+# step5
+source $derive_pg_file
+check_mv_design -power_nets
+
+# step6
+read_sdc $sdc_file
+check_timing
+report_timing
+
+# step7
+source $ctrl_file
