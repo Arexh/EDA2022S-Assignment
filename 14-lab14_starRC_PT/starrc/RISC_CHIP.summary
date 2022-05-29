@@ -1,0 +1,231 @@
+
+                                  StarRC (TM)
+
+                Version O-2018.06-SP4 for linux64 - Nov 29, 2018
+
+                    Copyright (c) 1999 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+ExecName: /home/eda_tools/Synopsys/starrc/O-2018.06-SP4/linux64_starrc/bin/StarXtract
+Version: O-2018.06-SP4
+Built on: Nov 29 2018 21:40:27
+Start Time: Tue May 24 18:05:11 2022
+
+Host ............ yelab
+
+xTractorName: /home/eda_tools/Synopsys/starrc/O-2018.06-SP4/linux64_starrc/bin/xTractor
+Version: O-2018.06-SP4
+Built on: Nov 29 2018 21:40:10
+WARNING: Command -clean is obsoleted for GATE level extraction and turned on by default. (SX-3582)
+
+Block ........... MULTIPLIER_routed
+Star Directory .. /home/EDA/eda14/EDA2022S-Assignment/14-lab14_starRC_PT/starrc/starrc_dir
+WARNING: Running StarRC in single corner mode will result in degraded runtime for design flows where
+         multiple corners are used.  For optimal runtime, add the necessary commands to configure
+         the Simultaneous Multicorner flow (CORNERS_FILE and SELECTED_CORNERS). (SX-3552)
+Milkyway DB ..... /home/EDA/eda14/EDA2022S-Assignment/14-lab14_starRC_PT/icc/risc_chip.mw
+ Ref Libs Report is skipped.
+  Setup         Elp=00:00:01 Cpu=00:00:01 Usr=1.1    Sys=0.0    Mem=498.5 
+Done
+
+Map Layers:  Tue May 24 18:05:12 2022
+WARNING: MAPPING_FILE layer "DIFF" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL7" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL8" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL9" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "MRDL" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA6" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA7" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA8" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIARDL" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal1_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal2_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal3_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal4_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal5_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal6_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal7_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal8_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+WARNING: MAPPING_FILE layer "metal9_pin" is not a valid database layer and will be removed.
+ (SX-1813)
+  Warnings: 18    Errors: 0    (See file summary/layers.sum)
+  Layers        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=498.6 
+Done
+
+Create Models:  Tue May 24 18:05:12 2022
+  Warnings: 0    Errors: 0
+  Models        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+Done
+
+Build HN:  Tue May 24 18:05:12 2022
+  Warnings: 0    Errors: 0
+  HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=499.5 
+Done
+
+Process Cells:  Tue May 24 18:05:13 2022
+  Warnings: 0    Errors: 0
+  Cells         Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=501.7 
+Done
+
+Translate DB:  Tue May 24 18:05:13 2022
+  Warnings: 0    Errors: 0
+  Translate     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+Done
+
+Netlist Setup:  Tue May 24 18:05:13 2022
+  Warnings: 0    Errors: 0
+  NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+Done
+
+GPD XtractSetup:  Tue May 24 18:05:13 2022
+  Warnings: 0    Errors: 0
+  GPD_XtractSetup Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+Done
+
+GPD NameMap:  Tue May 24 18:05:13 2022
+  Warnings: 0    Errors: 0
+  GPD_NameMap   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=336.2 
+Done
+
+xTract DB:  Tue May 24 18:05:13 2022
+Completed   0%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed   1%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed   2%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed   3%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed   4%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed   5%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  10%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  15%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  20%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  25%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  29%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  34%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  39%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  44%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  49%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  54%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  59%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  64%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  69%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  74%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  78%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  83%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  88%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  93%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed  98%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Completed 100%  Time=00:00:00  RemainingTime=00:00:00  Mem=308.051
+Extracted 4727 capacitors, 12757 resistors, 11883 nodes
+Reduced to 2347 nodes,  (80.2491%)
+Reduced to 2020 resistors,  (84.1656%)
+Reduced to 1174 capacitors: -1173 Cc and 2347 Cg (75.164%)
+  Warnings: 0    Errors: 0
+  xTract        Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=308.1 
+Done
+
+xTract Post Process DB:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  xTractPP      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.0 
+Done
+
+Report Violations:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+Done
+
+GPD Post Process:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  GPD_PostProcess Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+Done
+
+GPD Converter Part 1:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  GPD_Converter1 Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.2 
+Done
+
+GPD Converter Part 2:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  GPD_Converter2 Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 
+Done
+
+GPD Converter Merge:  Tue May 24 18:05:14 2022
+  Warnings: 0    Errors: 0
+  GPD_Converter_merge Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 
+Done
+  
+Setup               Elp=00:00:01 Cpu=00:00:01 Usr=1.1    Sys=0.0    Mem=498.5 
+Layers              Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=498.6 
+Models              Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+HN                  Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=499.5 
+Cells               Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=501.7 
+Translate           Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+NetlistSetup        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_XtractSetup     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+GPD_NameMap         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=336.2 
+xTract              Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=308.1 
+xTractPP            Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.0 
+ReportViolations    Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_PostProcess     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_Converter1      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.2 
+GPD_Converter2      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 
+GPD_Converter_merge Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 
+  
+Done          Elp=00:00:02 Cpu=00:00:01 Usr=1.6    Sys=0.3    Mem=501.7 
+
+End Time: Tue May 24 18:05:14 2022
+
+
+
+RUN-TIME SUMMARY:
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                            |END TIME             |HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup                     Elp=00:00:01 Cpu=00:00:01 Mem=498.5  |May 24 18:05:12 |yelab
+CPU_01 |*Layers                    Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:12 |yelab
+CPU_01 |*Models                    Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:12 |yelab
+CPU_01 |*HN                        Elp=00:00:01 Cpu=00:00:00 Mem=499.5  |May 24 18:05:13 |yelab
+CPU_01 |*Cells                     Elp=00:00:00 Cpu=00:00:00 Mem=501.7  |May 24 18:05:13 |yelab
+CPU_01 |*GPD_NameMap               Elp=00:00:00 Cpu=00:00:00 Mem=336.2  |May 24 18:05:13 |yelab
+CPU_01 |*GPD_XtractSetup           Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:13 |yelab
+CPU_01 |*NetlistSetup              Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:13 |yelab
+CPU_01 |*Translate                 Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:13 |yelab
+CPU_01 |*xTract                    Elp=00:00:01 Cpu=00:00:00 Mem=308.1  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_Converter_DP          Elp=00:00:00 Cpu=00:00:00 Mem=225.2  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_Converter_merge       Elp=00:00:00 Cpu=00:00:00 Mem=224.9  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_PostProcess           Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:14 |yelab
+CPU_01 |*ReportViolations          Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:14 |yelab
+CPU_01 |*xTractPP                  Elp=00:00:00 Cpu=00:00:00 Mem=225    |May 24 18:05:14 |yelab
+----------------------------------------------------------------------------------------------
+Start Time: Tue May 24 18:05:11 2022
+End Time: Tue May 24 18:05:14 2022
+----------------------------------------------------------------------------------------------
+Overall:         Elp=00:00:03 Cpu= 00:00:01
+PreXtraction:    Elp=00:00:02 Cpu= 00:00:01
+Xtraction:       Elp=00:00:01 Cpu= 00:00:00
+PostXtraction:   Elp=00:00:00 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------
+Spef Output:     Elp= 00:00:00 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------
+
+
+NOTE: Simultaneous Multicorner (SMC) is now the default mode for StarRC gate-level extraction.
+By running SMC, the overall runtime can be reduced by up to 2x with the same level of accuracy
+as single corner extraction. For more information, consult the Simultaneous Multicorner Section
+in the StarRC User Guide.
+
+Message Summary:
+----------------------------------------------------------------------------------------------
+SX-1813 (x  18)|Warning      |MAPPING_FILE LAYER "()" IS NOT A VALID DATABASE LAYER AND WILL BE REMOVED.
+SX-3552 (x   1)|Warning      |RUNNING STARRC IN SINGLE CORNER MODE WILL RESULT IN DEGRADED RUNTIME FOR DESIGN FLOWS WHERE MULTIPLE CORNERS ARE USED.  FOR OPTIMAL RUNTIME, ADD THE NECESSARY COMMANDS TO CONFIGURE THE SIMULTANEOUS MULTICORNER FLOW (CORNERS_FILE AND SELECTED_CORNERS).
+SX-3582 (x   1)|Warning      |COMMAND -CLEAN IS OBSOLETED FOR GATE LEVEL EXTRACTION AND TURNED ON BY DEFAULT.
+

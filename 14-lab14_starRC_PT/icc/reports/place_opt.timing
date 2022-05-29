@@ -1,0 +1,90 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 17:00:03 2022
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock network delay (ideal)              1.00       1.00
+  done_reg/CP (dfcrb2)                     0.00       1.00 r
+  done_reg/QN (dfcrb2)                     0.31       1.31 r
+  U8/ZN (invbd2)                           0.07 *     1.38 f
+  U79/ZN (invbd7)                          0.06 *     1.44 r
+  U87/ZN (invbdk)                          0.22 *     1.65 f
+  done (out)                               0.01 *     1.67 f
+  data arrival time                                   1.67
+
+  max_delay                                0.50       0.50
+  output external delay                    0.00       0.50
+  data required time                                  0.50
+  -----------------------------------------------------------
+  data required time                                  0.50
+  data arrival time                                  -1.67
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.17
+
+
+  Startpoint: product_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  product_reg[1]/CP (dfcrq1)                              0.00       1.00 r
+  product_reg[1]/Q (dfcrq1)                               0.41       1.41 f
+  U193/ZN (inv0d1)                                        0.06 *     1.47 r
+  add_0_root_add_82_ni/A[1] (mulitiplier_DW01_inc_2)      0.00       1.47 r
+  add_0_root_add_82_ni/U1_1_1/CO (ah01d0)                 0.17 *     1.64 r
+  add_0_root_add_82_ni/U1_1_2/CO (ah01d0)                 0.18 *     1.82 r
+  add_0_root_add_82_ni/U1_1_3/CO (ah01d0)                 0.18 *     2.00 r
+  add_0_root_add_82_ni/U1_1_4/CO (ah01d0)                 0.18 *     2.18 r
+  add_0_root_add_82_ni/U1_1_5/CO (ah01d0)                 0.18 *     2.37 r
+  add_0_root_add_82_ni/U1_1_6/CO (ah01d0)                 0.18 *     2.55 r
+  add_0_root_add_82_ni/U1_1_7/CO (ah01d0)                 0.18 *     2.73 r
+  add_0_root_add_82_ni/U1_1_8/CO (ah01d0)                 0.18 *     2.91 r
+  add_0_root_add_82_ni/U1_1_9/CO (ah01d0)                 0.18 *     3.09 r
+  add_0_root_add_82_ni/U1_1_10/CO (ah01d0)                0.18 *     3.27 r
+  add_0_root_add_82_ni/U1_1_11/CO (ah01d0)                0.18 *     3.45 r
+  add_0_root_add_82_ni/U1_1_12/CO (ah01d0)                0.18 *     3.63 r
+  add_0_root_add_82_ni/U1_1_13/CO (ah01d0)                0.18 *     3.82 r
+  add_0_root_add_82_ni/U1_1_14/S (ah01d0)                 0.24 *     4.06 f
+  add_0_root_add_82_ni/SUM[14] (mulitiplier_DW01_inc_2)
+                                                          0.00       4.06 f
+  U209/Z (aor222d1)                                       0.24 *     4.30 f
+  M_reg[14]/D (dfcrb2)                                    0.00 *     4.30 f
+  data arrival time                                                  4.30
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             1.00       9.00
+  clock uncertainty                                      -0.50       8.50
+  M_reg[14]/CP (dfcrb2)                                   0.00       8.50 r
+  library setup time                                     -0.03       8.47
+  data required time                                                 8.47
+  --------------------------------------------------------------------------
+  data required time                                                 8.47
+  data arrival time                                                 -4.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.17
+
+
+1

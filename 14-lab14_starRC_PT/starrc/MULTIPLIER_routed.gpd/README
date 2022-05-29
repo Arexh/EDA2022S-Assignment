@@ -1,0 +1,124 @@
+VENDOR: Synopsys Inc.
+PROGRAM: StarRC
+PROGRAM VERSION: O-2018.06-SP4
+PROGRAM DATE: Nov 29 2018 21:40:27
+GPD VERSION: 2.7
+GPD DATE: Tue May 24 18:05:14 2022
+NETS: 327 (373)
+CELLS: 260 (634)
+PORTS: 36 (36)
+IDEAL NETS: 0 (0)
+IDEAL CELLS: 0 (0)
+IDEAL PORTS: 0 (0)
+UNCONNECTED PORTS: 0 (0)
+UNCONNECTED PINS: 0
+MIN GND CAP: 0.001
+GPD CONTENTS: DATAP,DATAF,STITCH_EXT,CONV_FILE
+NAME MAP COMPLETE: YES
+GPD DATA COMPLETE: YES
+HAS VIA PILLAR: NO
+RESISTANCE DETAIL NO
+RESISTANCE BOUNDING BOXNO
+
+COUPLING_ABS_THRESHOLD: 3
+COUPLING_REL_THRESHOLD: 0.03
+FILTERING_OPERATION: AND
+
+CAPACITANCE UNIT: 1
+RESISTANCE UNIT: 1
+BUS BIT DELIMITER: []
+PIN DELIMITER: :
+HIERARCHY DELIMITER: /
+NET_SHORTING_CONDUCTANCE: 100
+OPEN_IP_SHORTING_CONDUCTANCE: 10
+NETLIST NODE SECTION: NO
+NETLIST_COMPRESSION: NO
+NETLIST PRECISION: 6
+NETLIST_INPUT_DRIVERS: NO
+NETLIST_NAME_MAP: YES
+NETLIST_INCREMENTAL: NO
+LUMPED_CAP_FORMATTING: NO
+NETLIST_NODENAME_NETNAME: NO
+NETLIST_INTEGRITY_CHECK: GPIO_VIOLATION_TYPE_NONE
+
+Layer 1
+  ID: 0
+  Layer name: SUBSTRATE
+
+Layer 2
+  ID: 1
+  Layer name: CP
+  ITF Layer name: POLY
+
+Layer 3
+  ID: 2
+  Layer name: METAL
+  ITF Layer name: M1
+
+Layer 4
+  ID: 3
+  Layer name: METAL2
+  ITF Layer name: M2
+
+Layer 5
+  ID: 4
+  Layer name: METAL3
+  ITF Layer name: M3
+
+Layer 6
+  ID: 5
+  Layer name: METAL4
+  ITF Layer name: M4
+
+Layer 7
+  ID: 6
+  Layer name: METAL5
+  ITF Layer name: M5
+
+Layer 8
+  ID: 7
+  Layer name: METAL6
+  ITF Layer name: M6
+
+Layer 9
+  ID: 8
+  Layer name: CONT
+  ITF Layer name: POLYCONT
+  from ID: 1
+  to ID: 2
+
+Layer 10
+  ID: 9
+  Layer name: VIA
+  ITF Layer name: VIA1
+  from ID: 2
+  to ID: 3
+
+Layer 11
+  ID: 10
+  Layer name: VIA2
+  ITF Layer name: VIA2
+  from ID: 3
+  to ID: 4
+
+Layer 12
+  ID: 11
+  Layer name: VIA3
+  ITF Layer name: VIA3
+  from ID: 4
+  to ID: 5
+
+Layer 13
+  ID: 12
+  Layer name: VIA4
+  ITF Layer name: VIA4
+  from ID: 5
+  to ID: 6
+
+Layer 14
+  ID: 13
+  Layer name: VIA5
+  ITF Layer name: VIA5
+  from ID: 6
+  to ID: 7
+

@@ -1,0 +1,24 @@
+run_in_same_process: start time = 1653386712
+WARNING: MAPPING_FILE layer "DIFF" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL7" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL8" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "METAL9" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "MRDL" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA6" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA7" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIA8" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "VIARDL" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal1_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal2_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal3_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal4_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal5_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal6_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal7_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal8_pin" is not a valid database layer and will be removed. (SX-1813)
+WARNING: MAPPING_FILE layer "metal9_pin" is not a valid database layer and will be removed. (SX-1813)
+  
+InitDB        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.0    Mem=498.6 
+Layers        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=498.6 

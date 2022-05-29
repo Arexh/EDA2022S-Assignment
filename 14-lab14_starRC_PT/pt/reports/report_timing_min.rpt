@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 18:11:11 2022
+****************************************
+
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  done_reg/CP (dfcrb2)                     0.00       0.32 r
+  done_reg/Q (dfcrb2)                      0.40 &     0.72 f
+  U10/ZN (inv0d1)                          0.03 &     0.75 r
+  U88/ZN (nd02d0)                          0.07 &     0.83 f
+  done_reg/D (dfcrb2)                      0.00 &     0.83 f
+  data arrival time                                   0.83
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.32       0.32
+  clock reconvergence pessimism            0.00       0.32
+  clock uncertainty                        0.10       0.42
+  done_reg/CP (dfcrb2)                                0.42 r
+  library hold time                        0.02       0.44
+  data required time                                  0.44
+  ---------------------------------------------------------------
+  data required time                                  0.44
+  data arrival time                                  -0.83
+  ---------------------------------------------------------------
+  slack (MET)                                         0.39
+
+
+1

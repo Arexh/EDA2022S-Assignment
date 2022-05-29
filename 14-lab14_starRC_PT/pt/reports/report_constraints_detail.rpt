@@ -1,0 +1,453 @@
+****************************************
+Report : constraint
+	-all_violators
+	-verbose
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 18:11:11 2022
+****************************************
+
+
+  Startpoint: M_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[15] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_15_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_15_/QN (dfcrb2)                           0.33 &     0.65 f
+  U98/ZN (invbd2)                                 0.07 &     0.73 r
+  U113/ZN (invbd7)                                0.07 &     0.80 f
+  U15/ZN (invbdk)                                 0.17 &     0.96 r
+  M[15] (out)                                     0.01 &     0.97 r
+  data arrival time                                          0.97
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.97
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.47
+
+
+  Startpoint: done_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: done (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  done_reg/CP (dfcrb2)                            0.00       0.32 r
+  done_reg/QN (dfcrb2)                            0.28 &     0.60 r
+  U8/ZN (invbd2)                                  0.08 &     0.68 f
+  U79/ZN (invbd7)                                 0.06 &     0.73 r
+  U87/ZN (invbdk)                                 0.21 &     0.95 f
+  done (out)                                      0.01 &     0.96 f
+  data arrival time                                          0.96
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.96
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.46
+
+
+  Startpoint: M_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[14] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_14_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_14_/QN (dfcrb2)                           0.28 &     0.60 r
+  U7/ZN (invbd2)                                  0.08 &     0.68 f
+  U81/ZN (invbd7)                                 0.06 &     0.73 r
+  U84/ZN (invbdk)                                 0.21 &     0.95 f
+  M[14] (out)                                     0.01 &     0.95 f
+  data arrival time                                          0.95
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.95
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.45
+
+
+  Startpoint: M_reg_12_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[12] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_12_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_12_/QN (dfcrb2)                           0.28 &     0.60 r
+  U95/ZN (invbd2)                                 0.08 &     0.67 f
+  U108/ZN (invbd7)                                0.06 &     0.73 r
+  U107/ZN (invbdk)                                0.21 &     0.94 f
+  M[12] (out)                                     0.00 &     0.95 f
+  data arrival time                                          0.95
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.95
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.45
+
+
+  Startpoint: M_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[6] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_6_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_6_/QN (dfcrb2)                            0.28 &     0.60 r
+  U102/ZN (invbd2)                                0.07 &     0.67 f
+  U117/ZN (invbd7)                                0.06 &     0.73 r
+  U129/ZN (invbdk)                                0.22 &     0.94 f
+  M[6] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[3] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_3_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_3_/QN (dfcrb2)                            0.28 &     0.60 r
+  U99/ZN (invbd2)                                 0.07 &     0.67 f
+  U114/ZN (invbd7)                                0.06 &     0.73 r
+  U126/ZN (invbdk)                                0.21 &     0.94 f
+  M[3] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_13_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[13] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_13_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_13_/QN (dfcrb2)                           0.28 &     0.59 r
+  U96/ZN (invbd2)                                 0.07 &     0.67 f
+  U110/ZN (invbd7)                                0.06 &     0.72 r
+  U109/ZN (invbdk)                                0.21 &     0.94 f
+  M[13] (out)                                     0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[4] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_4_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_4_/QN (dfcrb2)                            0.27 &     0.60 r
+  U100/ZN (invbd2)                                0.07 &     0.67 f
+  U115/ZN (invbd7)                                0.06 &     0.72 r
+  U127/ZN (invbdk)                                0.22 &     0.94 f
+  M[4] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[8] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_8_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_8_/QN (dfcrb2)                            0.28 &     0.59 r
+  U90/ZN (invbd2)                                 0.07 &     0.67 f
+  U124/ZN (invbd7)                                0.05 &     0.72 r
+  U123/ZN (invbdk)                                0.21 &     0.94 f
+  M[8] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[0] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_0_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_0_/QN (dfcrb2)                            0.28 &     0.60 r
+  U89/ZN (invbd2)                                 0.07 &     0.67 f
+  U122/ZN (invbd7)                                0.05 &     0.72 r
+  U121/ZN (invbdk)                                0.21 &     0.94 f
+  M[0] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_11_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[11] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_11_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_11_/QN (dfcrb2)                           0.28 &     0.60 r
+  U94/ZN (invbd2)                                 0.07 &     0.67 f
+  U106/ZN (invbd7)                                0.05 &     0.72 r
+  U105/ZN (invbdk)                                0.21 &     0.94 f
+  M[11] (out)                                     0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[5] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_5_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_5_/QN (dfcrb2)                            0.28 &     0.60 r
+  U101/ZN (invbd2)                                0.07 &     0.67 f
+  U116/ZN (invbd7)                                0.05 &     0.72 r
+  U128/ZN (invbdk)                                0.21 &     0.94 f
+  M[5] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[1] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_1_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_1_/QN (dfcrb2)                            0.27 &     0.59 r
+  U97/ZN (invbd2)                                 0.07 &     0.67 f
+  U119/ZN (invbd7)                                0.05 &     0.72 r
+  U118/ZN (invbdk)                                0.21 &     0.93 f
+  M[1] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[2] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_2_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_2_/QN (dfcrb2)                            0.27 &     0.59 r
+  U93/ZN (invbd2)                                 0.07 &     0.67 f
+  U11/ZN (invbd7)                                 0.05 &     0.72 r
+  U111/ZN (invbdk)                                0.21 &     0.94 f
+  M[2] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[7] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_7_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_7_/QN (dfcrb2)                            0.27 &     0.59 r
+  U6/ZN (invbd2)                                  0.07 &     0.66 f
+  U80/ZN (invbd7)                                 0.05 &     0.72 r
+  U14/ZN (invbdk)                                 0.21 &     0.93 f
+  M[7] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_10_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[10] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_10_/CP (dfcrb2)                           0.00       0.32 r
+  M_reg_10_/QN (dfcrb2)                           0.27 &     0.59 r
+  U92/ZN (invbd2)                                 0.07 &     0.66 f
+  U12/ZN (invbd7)                                 0.06 &     0.72 r
+  U103/ZN (invbdk)                                0.22 &     0.93 f
+  M[10] (out)                                     0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+  Startpoint: M_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[9] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                           Incr       Path
+  ----------------------------------------------------------------------
+  clock network delay (propagated)                0.32       0.32
+  M_reg_9_/CP (dfcrb2)                            0.00       0.32 r
+  M_reg_9_/QN (dfcrb2)                            0.27 &     0.59 r
+  U91/ZN (invbd2)                                 0.07 &     0.66 f
+  U120/ZN (invbd7)                                0.05 &     0.72 r
+  U125/ZN (invbdk)                                0.22 &     0.93 f
+  M[9] (out)                                      0.00 &     0.94 f
+  data arrival time                                          0.94
+
+  max_delay                                       0.50       0.50
+  output external delay                           0.00       0.50
+  data required time                                         0.50
+  ----------------------------------------------------------------------
+  data required time                                         0.50
+  data arrival time                                         -0.94
+  ----------------------------------------------------------------------
+  slack (VIOLATED)                                          -0.44
+
+
+1

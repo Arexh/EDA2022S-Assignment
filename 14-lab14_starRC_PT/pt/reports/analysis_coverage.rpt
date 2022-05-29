@@ -1,0 +1,241 @@
+****************************************
+Report : analysis_coverage
+	-status_details {untested}
+	-sort_by slack
+	-exclude_untested {constant_disabled false_paths}
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 18:11:11 2022
+****************************************
+
+Type of Check         Total              Met         Violated         Untested
+--------------------------------------------------------------------------------
+setup                    49        43 ( 88%)         0 (  0%)         6 ( 12%)
+hold                     49        43 ( 88%)         0 (  0%)         6 ( 12%)
+recovery                 46         0 (  0%)         0 (  0%)        46 (100%)
+removal                  46         0 (  0%)         0 (  0%)        46 (100%)
+min_pulse_width         140        92 ( 66%)         0 (  0%)        48 ( 34%)
+--------------------------------------------------------------------------------
+All Checks              330       178 ( 54%)         0 (  0%)       152 ( 46%)
+
+
+Constrained                  Related             Check
+Pin                          Pin       Clock     Type         Slack  Reason
+--------------------------------------------------------------------------------
+next_state_reg_1_/D          EN(rise)            hold      untested  no_endpoint_clock
+next_state_reg_1_/D          EN(rise)            setup     untested  no_endpoint_clock
+next_state_reg_1_/EN(low)                        min_pulse_width
+                                                           untested  no_clock
+next_state_reg_0_/D          EN(rise)            hold      untested  no_endpoint_clock
+next_state_reg_0_/D          EN(rise)            setup     untested  no_endpoint_clock
+next_state_reg_0_/EN(low)                        min_pulse_width
+                                                           untested  no_clock
+cur_state_reg_1_/D           CP(rise)  clk       hold      untested  no_startpoint_clock
+cur_state_reg_1_/D           CP(rise)  clk       setup     untested  no_startpoint_clock
+cur_state_reg_1_/CDN(low)                        min_pulse_width
+                                                           untested  no_clock
+cur_state_reg_1_/CDN(rise)   CP(rise)  clk       recovery  untested  no_startpoint_clock
+cur_state_reg_1_/CDN(rise)   CP(rise)  clk       removal   untested  no_startpoint_clock
+cur_state_reg_0_/D           CP(rise)  clk       hold      untested  no_startpoint_clock
+cur_state_reg_0_/D           CP(rise)  clk       setup     untested  no_startpoint_clock
+cur_state_reg_0_/CDN(low)                        min_pulse_width
+                                                           untested  no_clock
+cur_state_reg_0_/CDN(rise)   CP(rise)  clk       recovery  untested  no_startpoint_clock
+cur_state_reg_0_/CDN(rise)   CP(rise)  clk       removal   untested  no_startpoint_clock
+signed_bit_reg/D             CP(rise)  clk       hold      untested  no_startpoint_clock
+signed_bit_reg/D             CP(rise)  clk       setup     untested  no_startpoint_clock
+signed_bit_reg/ENN           CP(rise)  clk       hold      untested  no_startpoint_clock
+signed_bit_reg/ENN           CP(rise)  clk       setup     untested  no_startpoint_clock
+signed_bit_reg/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+signed_bit_reg/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+signed_bit_reg/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+count_reg_0_/CDN(low)                            min_pulse_width
+                                                           untested  no_clock
+count_reg_0_/CDN(rise)       CP(rise)  clk       recovery  untested  no_startpoint_clock
+count_reg_0_/CDN(rise)       CP(rise)  clk       removal   untested  no_startpoint_clock
+done_reg/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+done_reg/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+done_reg/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_12_/CDN(low)                         min_pulse_width
+                                                           untested  no_clock
+product_reg_12_/CDN(rise)    CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_12_/CDN(rise)    CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_11_/CDN(low)                         min_pulse_width
+                                                           untested  no_clock
+product_reg_11_/CDN(rise)    CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_11_/CDN(rise)    CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_10_/CDN(low)                         min_pulse_width
+                                                           untested  no_clock
+product_reg_10_/CDN(rise)    CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_10_/CDN(rise)    CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_9_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_9_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_9_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_8_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_8_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_8_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_0_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_0_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_0_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+count_reg_1_/CDN(low)                            min_pulse_width
+                                                           untested  no_clock
+count_reg_1_/CDN(rise)       CP(rise)  clk       recovery  untested  no_startpoint_clock
+count_reg_1_/CDN(rise)       CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_1_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_1_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_1_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_2_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_2_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_2_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_3_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_3_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_3_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_4_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_4_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_4_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_5_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_5_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_5_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_6_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_6_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_6_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+count_reg_2_/CDN(low)                            min_pulse_width
+                                                           untested  no_clock
+count_reg_2_/CDN(rise)       CP(rise)  clk       recovery  untested  no_startpoint_clock
+count_reg_2_/CDN(rise)       CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_0_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_0_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_0_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_5_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_5_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_5_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_4_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_4_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_4_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_3_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_3_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_3_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_2_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_2_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_2_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_1_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_1_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_1_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_13_/CDN(low)                         min_pulse_width
+                                                           untested  no_clock
+product_reg_13_/CDN(rise)    CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_13_/CDN(rise)    CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_7_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_7_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_7_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_2_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_2_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_2_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_0_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_0_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_0_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+multiplicand_reg_7_/CDN(low)                     min_pulse_width
+                                                           untested  no_clock
+multiplicand_reg_7_/CDN(rise)
+                             CP(rise)  clk       recovery  untested  no_startpoint_clock
+multiplicand_reg_7_/CDN(rise)
+                             CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_6_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_6_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_6_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_14_/CDN(low)                         min_pulse_width
+                                                           untested  no_clock
+product_reg_14_/CDN(rise)    CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_14_/CDN(rise)    CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_6_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_6_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_6_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_5_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_5_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_5_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_4_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_4_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_4_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_3_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_3_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_3_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_1_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_1_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_1_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_8_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_8_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_8_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+product_reg_7_/CDN(low)                          min_pulse_width
+                                                           untested  no_clock
+product_reg_7_/CDN(rise)     CP(rise)  clk       recovery  untested  no_startpoint_clock
+product_reg_7_/CDN(rise)     CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_9_/CDN(low)                                min_pulse_width
+                                                           untested  no_clock
+M_reg_9_/CDN(rise)           CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_9_/CDN(rise)           CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_10_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_10_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_10_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_11_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_11_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_11_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_12_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_12_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_12_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_13_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_13_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_13_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_14_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_14_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_14_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+M_reg_15_/CDN(low)                               min_pulse_width
+                                                           untested  no_clock
+M_reg_15_/CDN(rise)          CP(rise)  clk       recovery  untested  no_startpoint_clock
+M_reg_15_/CDN(rise)          CP(rise)  clk       removal   untested  no_startpoint_clock
+1

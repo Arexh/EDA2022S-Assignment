@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 17:00:00 2022
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[15]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[14]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[13]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[12]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[11]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[10]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[9]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[8]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[7]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[6]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[5]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[4]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[3]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[2]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[1]
+TIMING EXCEPTION                       max=0.5             -
+	-to      M[0]
+TIMING EXCEPTION                       max=0.5             -
+	-to      done
+
+1

@@ -1,0 +1,57 @@
+Information: Changed wire load model for 'mulitiplier_DW01_add_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed minimum wire load model for 'mulitiplier_DW01_add_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed wire load model for 'mulitiplier_DW01_inc_2' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed minimum wire load model for 'mulitiplier_DW01_inc_2' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed wire load model for 'mulitiplier_DW01_inc_0' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed minimum wire load model for 'mulitiplier_DW01_inc_0' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed wire load model for 'mulitiplier_DW01_inc_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed minimum wire load model for 'mulitiplier_DW01_inc_1' from 'ForQA' to 'ForQA'. (OPT-171)
+Information: Changed wire load model for 'mulitiplier' from 'ForQA' to '8000'. (OPT-170)
+Information: Changed minimum wire load model for 'mulitiplier' from '8000' to '8000'. (OPT-171)
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+Warning: The following input ports have no clock_relative delay specified, the command set_input_delay without -clock option will be ignored. (TIM-216)
+--------------------
+A[3]
+A[2]
+A[1]
+A[0]
+B[3]
+B[2]
+B[1]
+B[0]
+A[7]
+A[6]
+A[5]
+A[4]
+B[7]
+B[6]
+B[5]
+B[4]
+start
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+cur_state_reg[0]/D
+cur_state_reg[1]/D
+next_state_reg[0]/D
+next_state_reg[1]/D
+signed_bit_reg/D
+signed_bit_reg/ENN
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1

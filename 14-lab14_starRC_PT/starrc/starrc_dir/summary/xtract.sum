@@ -1,0 +1,11 @@
+Parsing option_file: xtract.tech (EX-304)
+Initializing extraction ... (EX-724)
+Reading binary grd file ../../lib/saed32nm_1p9m_nominal.nxtgrd ... (EX-135)
+Extracted 4727 capacitors, 12757 resistors, 11883 nodes
+Reduced to 2347 nodes,  (80.2491%)
+Reduced to 2020 resistors,  (84.1656%)
+Reduced to 1174 capacitors: -1173 Cc and 2347 Cg (75.164%)
+  
+xTractor      Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=308.1 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=308.1 

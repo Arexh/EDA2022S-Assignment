@@ -1,0 +1,23 @@
+
+                                  StarRC (TM)
+
+                Version O-2018.06-SP4 for linux64 - Nov 29, 2018
+
+                    Copyright (c) 1999 - 2018 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+ExecName: /home/eda_tools/Synopsys/starrc/O-2018.06-SP4/linux64_starrc/bin/StarXtract
+Version: O-2018.06-SP4
+Built on: Nov 29 2018 21:40:27
+Start Time: Tue May 24 18:05:13 2022
+
+Host ............ yelab
+
+  
+ReadHNdb      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_NameMap   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=336.2 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=336.2 

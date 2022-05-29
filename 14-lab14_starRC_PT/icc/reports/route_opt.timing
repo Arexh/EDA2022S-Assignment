@@ -1,0 +1,94 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 17:00:15 2022
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : -40/25/125
+
+Information: Percent of Arnoldi-based delays =  6.23%
+
+  Startpoint: M_reg[15] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[15] (output port)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock network delay (propagated)         0.22       0.22
+  M_reg[15]/CP (dfcrb2)                    0.00       0.22 r
+  M_reg[15]/QN (dfcrb2)                    0.27       0.49 r
+  U98/ZN (invbd2)                          0.07 &     0.56 f
+  U113/ZN (invbd7)                         0.05 &     0.61 r
+  U15/ZN (invbdk)                          0.22 &     0.83 f
+  M[15] (out)                              0.01 &     0.84 f
+  data arrival time                                   0.84
+
+  max_delay                                0.50       0.50
+  output external delay                    0.00       0.50
+  data required time                                  0.50
+  -----------------------------------------------------------
+  data required time                                  0.50
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.34
+
+
+  Startpoint: product_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M_reg[14] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.22       0.22
+  product_reg[1]/CP (dfcrq1)                              0.00       0.22 r
+  product_reg[1]/Q (dfcrq1)                               0.36       0.58 f
+  U193/ZN (inv0d1)                                        0.06 &     0.64 r
+  add_0_root_add_82_ni/A[1] (mulitiplier_DW01_inc_2)      0.00       0.64 r
+  add_0_root_add_82_ni/U1_1_1/CO (ah01d0)                 0.17 &     0.81 r
+  add_0_root_add_82_ni/U1_1_2/CO (ah01d0)                 0.18 &     0.99 r
+  add_0_root_add_82_ni/U1_1_3/CO (ah01d0)                 0.18 &     1.18 r
+  add_0_root_add_82_ni/U1_1_4/CO (ah01d0)                 0.18 &     1.36 r
+  add_0_root_add_82_ni/U1_1_5/CO (ah01d0)                 0.18 &     1.54 r
+  add_0_root_add_82_ni/U1_1_6/CO (ah01d0)                 0.18 &     1.72 r
+  add_0_root_add_82_ni/U1_1_7/CO (ah01d0)                 0.18 &     1.90 r
+  add_0_root_add_82_ni/U1_1_8/CO (ah01d0)                 0.18 &     2.08 r
+  add_0_root_add_82_ni/U1_1_9/CO (ah01d0)                 0.18 &     2.26 r
+  add_0_root_add_82_ni/U1_1_10/CO (ah01d0)                0.18 &     2.44 r
+  add_0_root_add_82_ni/U1_1_11/CO (ah01d0)                0.18 &     2.63 r
+  add_0_root_add_82_ni/U1_1_12/CO (ah01d0)                0.18 &     2.81 r
+  add_0_root_add_82_ni/U1_1_13/CO (ah01d0)                0.18 &     2.99 r
+  add_0_root_add_82_ni/U1_1_14/S (ah01d0)                 0.24 &     3.23 f
+  add_0_root_add_82_ni/SUM[14] (mulitiplier_DW01_inc_2)
+                                                          0.00       3.23 f
+  U209/Z (aor222d1)                                       0.24 &     3.47 f
+  M_reg[14]/D (dfcrb2)                                    0.00 &     3.47 f
+  data arrival time                                                  3.47
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (propagated)                        0.20       8.20
+  M_reg[14]/CP (dfcrb2)                                   0.00       8.20 r
+  library setup time                                     -0.08       8.12
+  data required time                                                 8.12
+  --------------------------------------------------------------------------
+  data required time                                                 8.12
+  data arrival time                                                 -3.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.65
+
+
+1

@@ -1,0 +1,4 @@
+../starrc_dir/convert_gpd.tech
+../starrc_dir/netlist.tech
+../starrc_dir/split_netlist.tech
+../starrc_dir/xt_charmode_netlist.tech

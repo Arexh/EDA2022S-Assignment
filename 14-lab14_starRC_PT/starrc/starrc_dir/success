@@ -1,0 +1,16 @@
+Setup | *Setup        Elp=00:00:01 Cpu=00:00:01 Usr=1.1    Sys=0.0    Mem=498.5 
+Layers |* Layers        Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=498.6 
+Models |* Models        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+HN |* HN            Elp=00:00:01 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=499.5 
+Cells |* Cells         Elp=00:00:00 Cpu=00:00:00 Usr=0.1    Sys=0.1    Mem=501.7 
+Translate |* Translate     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+NetlistSetup |* NetlistSetup  Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_XtractSetup |* GPD_XtractSetup Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+GPD_NameMap |* GPD_NameMap   Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=336.2 
+xTract |* xTract        Elp=00:00:00 Cpu=00:00:00 Usr=0.2    Sys=0.0    Mem=308.1 
+xTractPP |* xTractPP      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.0 
+ReportViolations |* ReportViolations Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_PostProcess |* GPD_PostProcess Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=335.9 
+GPD_Converter1 |* GPD_Converter1 Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=225.2 
+GPD_Converter2 |* GPD_Converter2 Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 
+GPD_Converter_merge |* GPD_Converter_merge Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=224.9 

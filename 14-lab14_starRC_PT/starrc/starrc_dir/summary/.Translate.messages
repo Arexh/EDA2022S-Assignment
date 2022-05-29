@@ -1,0 +1,16 @@
+run_in_same_process: start time = 1653386713
+create_xin_writer; sort_xin_in_memory YES cut_trap YES text_counter NO track_fill_detection YES
+original # tiles 0 < 225
+
+SKIP_CELLS:
+dfcrb2	xr02d1	xn02d1	nr02d0	nd12d0	nd02d1	nd02d0	lanlq1	invbdk	invbd7	invbd2	inv0d1	inv0d0	dfcrq1
+	dfcrn1	decrq1	buffd7	buffd3	bufbd2	bufbd1	aor22d1	aor222d1	aor221d1	an12d1	an03d1	an02d1	ah01d0
+	ad01d0	
+  
+PlaceTerm     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+PlaceText     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+Db2Xin        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+Translate     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+gateDirection Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=498.6 

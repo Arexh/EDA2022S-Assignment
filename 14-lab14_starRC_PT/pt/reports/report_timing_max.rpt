@@ -1,0 +1,39 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 18:11:11 2022
+****************************************
+
+
+  Startpoint: M_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: M[15] (output port)
+  Path Group: **default**
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock network delay (propagated)         0.32       0.32
+  M_reg_15_/CP (dfcrb2)                    0.00       0.32 r
+  M_reg_15_/QN (dfcrb2)                    0.33 &     0.65 f
+  U98/ZN (invbd2)                          0.07 &     0.73 r
+  U113/ZN (invbd7)                         0.07 &     0.80 f
+  U15/ZN (invbdk)                          0.17 &     0.96 r
+  M[15] (out)                              0.01 &     0.97 r
+  data arrival time                                   0.97
+
+  max_delay                                0.50       0.50
+  output external delay                    0.00       0.50
+  data required time                                  0.50
+  ---------------------------------------------------------------
+  data required time                                  0.50
+  data arrival time                                  -0.97
+  ---------------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+1

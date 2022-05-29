@@ -1,0 +1,24 @@
+-------------------------------------------------------
+
+PrimeTime save_session README file
+
+-------------------------------------------------------
+
+PrimeTime Version: 
+	O-2018.06-SP4 for linux64 -- Nov 30, 2018
+Save Session Date:
+	Tue May 24 18:11:11 2022
+ 
+-------------------------------------------------------
+
+Command log of this session is saved in "cmd_log".
+If the saved session is moved to a different location, 
+    please update the paths in the cmd_log file accordingly, 
+    in order to use the Constraints in-design flow.
+-------------------------------------------------------
+
+Current Design: mulitiplier
+
+Technology librares referenced by this session:
+/home/EDA/eda14/EDA2022S-Assignment/14-lab14_starRC_PT/lib/sc_max.db     sc_max.db
+-------------------------------------------------------

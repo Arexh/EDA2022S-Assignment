@@ -1,0 +1,29 @@
+----------------------------------------------------------------------------------------------
+CPU#   | STAGE SUMMARY                                            |END TIME             |HOST NAME
+----------------------------------------------------------------------------------------------
+CPU_01 |*Setup                     Elp=00:00:01 Cpu=00:00:01 Mem=498.5  |May 24 18:05:12 |yelab
+CPU_01 |*Layers                    Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:12 |yelab
+CPU_01 |*Models                    Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:12 |yelab
+CPU_01 |*HN                        Elp=00:00:01 Cpu=00:00:00 Mem=499.5  |May 24 18:05:13 |yelab
+CPU_01 |*Cells                     Elp=00:00:00 Cpu=00:00:00 Mem=501.7  |May 24 18:05:13 |yelab
+CPU_01 |*GPD_NameMap               Elp=00:00:00 Cpu=00:00:00 Mem=336.2  |May 24 18:05:13 |yelab
+CPU_01 |*GPD_XtractSetup           Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:13 |yelab
+CPU_01 |*NetlistSetup              Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:13 |yelab
+CPU_01 |*Translate                 Elp=00:00:00 Cpu=00:00:00 Mem=498.6  |May 24 18:05:13 |yelab
+CPU_01 |*xTract                    Elp=00:00:01 Cpu=00:00:00 Mem=308.1  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_Converter_DP          Elp=00:00:00 Cpu=00:00:00 Mem=225.2  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_Converter_merge       Elp=00:00:00 Cpu=00:00:00 Mem=224.9  |May 24 18:05:14 |yelab
+CPU_01 |*GPD_PostProcess           Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:14 |yelab
+CPU_01 |*ReportViolations          Elp=00:00:00 Cpu=00:00:00 Mem=335.9  |May 24 18:05:14 |yelab
+CPU_01 |*xTractPP                  Elp=00:00:00 Cpu=00:00:00 Mem=225    |May 24 18:05:14 |yelab
+----------------------------------------------------------------------------------------------
+Start Time: Tue May 24 18:05:11 2022
+End Time: Tue May 24 18:05:14 2022
+----------------------------------------------------------------------------------------------
+Overall:         Elp=00:00:03 Cpu= 00:00:01
+PreXtraction:    Elp=00:00:02 Cpu= 00:00:01
+Xtraction:       Elp=00:00:01 Cpu= 00:00:00
+PostXtraction:   Elp=00:00:00 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------
+Spef Output:     Elp= 00:00:00 Cpu= 00:00:00
+----------------------------------------------------------------------------------------------

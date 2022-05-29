@@ -1,0 +1,32 @@
+1.  add_72/A[7] (driver: pin add_72/A[7])
+2.  add_72/CI (driver: pin add_72/CI)
+3.  add_72/CO (driver: <none>)
+4.  add_0_root_add_82_ni/A[15] (driver: pin add_0_root_add_82_ni/A[15])
+****************************************
+Report : annotated_parasitics
+	-check
+	-internal_nets
+	-boundary_nets
+	-list_not_annotated
+	-max_nets 10
+Design : mulitiplier
+Version: O-2018.06-SP4
+Date   : Tue May 24 18:11:11 2022
+****************************************
+
+                    |         |         |         |   RC    |   Not   |
+Net Type            |  Total  | Lumped  |  RC pi  | network |Annotated|
+--------------------+---------+---------+---------+---------+---------+
+Internal nets       |         |         |         |         |         |
+  - Pin to pin nets |     291 |       0 |       0 |     291 |       0 |
+  - Driverless nets |       4 |       0 |       0 |       0 |       4 |
+  - Loadless nets   |       0 |       0 |       0 |       0 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+Boundary/port nets  |         |         |         |         |         |
+  - Pin to pin nets |      36 |       0 |       0 |      36 |       0 |
+  - Driverless nets |       0 |       0 |       0 |       0 |       0 |
+  - Loadless nets   |       0 |       0 |       0 |       0 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+                    |     331 |       0 |       0 |     327 |       4 |
+
+1

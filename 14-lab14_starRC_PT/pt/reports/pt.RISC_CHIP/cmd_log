@@ -1,0 +1,9 @@
+source /home/eda_tools/Synopsys/pts/pts/O-2018.06-SP4/admin/setup/.synopsys_pt.setup
+set link_path "* ../lib/sc_max.db"
+read_verilog ../icc/results/MY_MULTIPLER.gv
+current_design mulitiplier
+link
+read_parasitics -format SPEF ../starrc/max.spef
+read_sdc ../icc/design_data/mulitiplier.sdc
+set_propagated_clock [all_clocks]
+update_timing -full
