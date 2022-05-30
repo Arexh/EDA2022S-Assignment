@@ -1,0 +1,40 @@
+1.  a_addr[2] (driver: <none>)
+2.  a_addr[1] (driver: <none>)
+3.  U_regb_biu/add_548/carry[11] (driver: <none>)
+4.  U_regb_biu/add_548/carry[10] (driver: <none>)
+5.  U_control/decode[41] (driver: <none>)
+6.  U_control/decode[42] (driver: <none>)
+7.  U_control/decode[43] (driver: <none>)
+8.  U_control/decode[30] (driver: <none>)
+9.  U_control/decode[31] (driver: <none>)
+10.  U_control/decode[36] (driver: <none>)
+..... suppressed 18 additional unannotated nets.
+
+****************************************
+Report : annotated_parasitics
+	-check
+	-internal_nets
+	-boundary_nets
+	-list_not_annotated
+	-max_nets 10
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:23:59 2022
+****************************************
+
+                    |         |         |         |   RC    |   Not   |
+Net Type            |  Total  | Lumped  |  RC pi  | network |Annotated|
+--------------------+---------+---------+---------+---------+---------+
+Internal nets       |         |         |         |         |         |
+  - Pin to pin nets |    2733 |       0 |       0 |    2733 |       0 |
+  - Driverless nets |      28 |       0 |       0 |       0 |      28 |
+  - Loadless nets   |       2 |       0 |       0 |       2 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+Boundary/port nets  |         |         |         |         |         |
+  - Pin to pin nets |      42 |       0 |       0 |      42 |       0 |
+  - Driverless nets |       0 |       0 |       0 |       0 |       0 |
+  - Loadless nets   |       3 |       0 |       0 |       3 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+                    |    2808 |       0 |       0 |    2780 |      28 |
+
+1

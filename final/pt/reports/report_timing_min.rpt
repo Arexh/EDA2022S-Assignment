@@ -1,0 +1,44 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:23:59 2022
+****************************************
+
+
+  Startpoint: U_control/int_type_reg_0_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_control/div_reg_reg
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.74       0.74
+  U_control/int_type_reg_0_/CP (dfcrb1)                   0.00       0.74 r
+  U_control/int_type_reg_0_/QN (dfcrb1)                   0.30 &     1.04 r
+  U_control/U558/Z (aoim22d1)                             0.19 &     1.23 f
+  U_control/div_reg_reg/D (dfcrq1)                        0.00 &     1.23 f
+  data arrival time                                                  1.23
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.72       0.72
+  clock reconvergence pessimism                           0.00       0.72
+  U_control/div_reg_reg/CP (dfcrq1)                                  0.72 r
+  library hold time                                       0.05       0.77
+  data required time                                                 0.77
+  ------------------------------------------------------------------------------
+  data required time                                                 0.77
+  data arrival time                                                 -1.23
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+1

@@ -1,0 +1,68 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:23:59 2022
+****************************************
+
+
+  Startpoint: U_control/a_addr_reg_2_
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_regb_biu/pc_reg_13_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        0.74       0.74
+  U_control/a_addr_reg_2_/CP (dfcrb1)                     0.00       0.74 r
+  U_control/a_addr_reg_2_/QN (dfcrb1)                     0.38 &     1.12 r
+  U_regb_biu/U234/Z (bufbd1)                              0.13 &     1.24 r
+  U_regb_biu/U44/ZN (invbd2)                              0.11 &     1.35 f
+  U_regb_biu/U301/ZN (nd02d1)                             0.08 &     1.44 r
+  U_regb_biu/U46/ZN (invbd2)                              0.21 &     1.64 f
+  U_regb_biu/U456/ZN (aoi2222d1)                          0.26 &     1.91 r
+  U_regb_biu/U198/ZN (mi02d0)                             0.29 &     2.20 f
+  U_regb_biu/U195/ZN (nd02d1)                             0.10 &     2.30 r
+  U_regb_biu/U196/Z (an03d1)                              0.17 &     2.46 r
+  U_regb_biu/U199/ZN (nd02d1)                             0.16 &     2.63 f
+  U_alu/U316/Z (aor222d1)                                 0.29 &     2.91 f
+  U_alu/U144/ZN (inv0d1)                                  0.05 &     2.96 r
+  U_alu/U85/Z (an03d1)                                    0.24 &     3.20 r
+  U_alu/U95/ZN (inv0d0)                                   0.30 &     3.50 f
+  U_alu/U230/ZN (nd02d0)                                  0.13 &     3.63 r
+  U_alu/U264/ZN (nd03d0)                                  0.10 &     3.73 f
+  U_alu/U242/ZN (nd12d0)                                  0.08 &     3.82 r
+  U_alu/U184/ZN (nd04d0)                                  0.19 &     4.01 f
+  U_alu/U213/ZN (nd02d0)                                  0.15 &     4.17 r
+  U_alu/U214/ZN (nd02d2)                                  0.14 &     4.30 f
+  U_regb_biu/U325/ZN (inv0d0)                             0.12 &     4.42 r
+  U_regb_biu/U174/ZN (nd02d2)                             0.09 &     4.51 f
+  U_regb_biu/U382/ZN (nd02d2)                             0.06 &     4.57 r
+  U_regb_biu/U175/ZN (inv0d1)                             0.26 &     4.83 f
+  U_regb_biu/U666/Z (aor222d1)                            0.46 &     5.29 f
+  U_regb_biu/pc_reg_13_/D (dfcrq1)                        0.00 &     5.29 f
+  data arrival time                                                  5.29
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (propagated)                        0.72       4.72
+  clock reconvergence pessimism                           0.00       4.72
+  clock uncertainty                                      -0.30       4.42
+  U_regb_biu/pc_reg_13_/CP (dfcrq1)                                  4.42 r
+  library setup time                                     -0.02       4.40
+  data required time                                                 4.40
+  ------------------------------------------------------------------------------
+  data required time                                                 4.40
+  data arrival time                                                 -5.29
+  ------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.89
+
+
+1
