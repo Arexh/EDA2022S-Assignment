@@ -1,0 +1,83 @@
+Reference design is 'r:/WORK/risc8'
+Implementation design is 'i:/WORK/risc8'
+Status:  Checking designs...
+Status:  Building verification models...
+Status:  Matching...
+    
+*********************************** Matching Results ***********************************    
+ 300 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 13 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 4(0) Unmatched reference(implementation) unread points    
+****************************************************************************************
+
+1
+**************************************************
+Report         : unmatched_points
+
+Reference      : r:/WORK/risc8
+Implementation : i:/WORK/risc8
+Version        : O-2018.06-SP4
+Date           : Mon May 30 15:24:19 2022
+**************************************************
+
+No unmatched points.
+
+1
+Reference design is 'r:/WORK/risc8'
+Implementation design is 'i:/WORK/risc8'
+    
+*********************************** Matching Results ***********************************    
+ 300 Compare points matched by name    
+ 0 Compare points matched by signature analysis    
+ 0 Compare points matched by topology    
+ 13 Matched primary inputs, black-box outputs    
+ 0(0) Unmatched reference(implementation) compare points    
+ 0(0) Unmatched reference(implementation) primary inputs, black-box outputs    
+ 4(0) Unmatched reference(implementation) unread points    
+****************************************************************************************
+
+Status:  Verifying...
+
+********************************* Verification Results *********************************
+Verification SUCCEEDED
+----------------------
+ Reference design: r:/WORK/risc8
+ Implementation design: i:/WORK/risc8
+ 300 Passing compare points
+----------------------------------------------------------------------------------------
+Matched Compare Points     BBPin    Loop   BBNet     Cut    Port     DFF     LAT   TOTAL
+----------------------------------------------------------------------------------------
+Passing (equivalent)           0       0       0       0      29     271       0     300
+Failing (not equivalent)       0       0       0       0       0       0       0       0
+Not Compared
+  Unread                       0       0       0       0       0       1       0       1
+****************************************************************************************
+1
+**************************************************
+Report         : failing_points
+
+Reference      : r:/WORK/risc8
+Implementation : i:/WORK/risc8
+Version        : O-2018.06-SP4
+Date           : Mon May 30 15:24:21 2022
+**************************************************
+
+No failing compare points.
+
+1
+    Error: Diagnosis and analysis can only be performed after an unsucessful verification (FM-006)
+0
+**************************************************
+Report         : error_candidates
+
+Reference      : r:/WORK/risc8
+Implementation : i:/WORK/risc8
+Version        : O-2018.06-SP4
+Date           : Mon May 30 15:24:21 2022
+**************************************************
+Error: No error report available, please run diagnose first (FM-038)
+0
