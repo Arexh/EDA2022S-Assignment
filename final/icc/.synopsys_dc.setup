@@ -78,15 +78,15 @@ set_min_library ram16x128_max.db -min_version ram16x128_min.db
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# risc8_top setup variables
+# risc8 setup variables
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-set my_mw_lib risc8_top.mw
+set my_mw_lib risc8.mw
 set mw_path "./ref/mw_lib"
 set tech_file " ./ref/tech/cb13_6m.tf"
 set tlup_map "./ref/tlup/cb13_6m.map"
 set tlup_max "./ref/tlup/cb13_6m_max.tluplus"
 set tlup_min "./ref/tlup/cb13_6m_min.tluplus"
-set top_design   "risc8_top"
-set verilog_file "./design_data/risc8_top.v"
-set sdc_file     "./design_data/risc8_top.sdc"
+set top_design   "risc8"
+set verilog_file "./design_data/risc8.v"
+set sdc_file     "./design_data/risc8.sdc"
 set derive_pg_file    "./scripts/derive_pg.tcl"

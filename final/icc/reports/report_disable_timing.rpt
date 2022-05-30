@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : disable_timing
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:06:25 2022
+****************************************
+
+
+
+Flags:       c  case-analysis
+             f  false net arc
+             C  Conditional arc
+             l  loop breaking
+             u  user-defined
+             m  modes
+
+
+  Cell or Port        From        To             Sense               Flag
+--------------------------------------------------------------------------------
+
+
+1

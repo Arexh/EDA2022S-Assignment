@@ -1,0 +1,13 @@
+ 
+****************************************
+Report : clock_skew
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:06:25 2022
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk                 -         -         -         -         -      0.30
+1

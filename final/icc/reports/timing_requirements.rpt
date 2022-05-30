@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:06:25 2022
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       max=0.8             -
+	-to      cycle
+TIMING EXCEPTION                       max=0.8             -
+	-to      write
+TIMING EXCEPTION                       max=0.8             -
+	-to      ifetch
+TIMING EXCEPTION                       max=0.8             -
+	-to      iack
+TIMING EXCEPTION                       max=0.8             -
+	-to      ie
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[15]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[14]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[13]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[12]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[11]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[10]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[9]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[8]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[7]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[6]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[5]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[4]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[3]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[2]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[1]
+TIMING EXCEPTION                       max=0.8             -
+	-to      address[0]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[7]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[6]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[5]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[4]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[3]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[2]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[1]
+TIMING EXCEPTION                       max=0.8             -
+	-to      data_out[0]
+
+1

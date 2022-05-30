@@ -1,0 +1,97 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : risc8
+Version: O-2018.06-SP4
+Date   : Mon May 30 16:06:31 2022
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: cb13fs120_tsmc_max   Library: cb13fs120_tsmc_max
+
+  Startpoint: U_regb_biu/data_out_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out[2]
+            (output port)
+  Path Group: OUTPUTS
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  U_regb_biu/data_out_reg[2]/CP (decrq1)                  0.00       0.00 r
+  U_regb_biu/data_out_reg[2]/Q (decrq1)                   0.31       0.31 f
+  U_regb_biu/data_out[2] (risc8_regb_biu)                 0.00       0.31 f
+  U5/Z (bufbda)                                           0.47 *     0.79 f
+  data_out[2] (out)                                       0.01 *     0.79 f
+  data arrival time                                                  0.79
+
+  max_delay                                               0.80       0.80
+  output external delay                                   0.00       0.80
+  data required time                                                 0.80
+  --------------------------------------------------------------------------
+  data required time                                                 0.80
+  data arrival time                                                 -0.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U_control/a_addr_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_regb_biu/pc_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_control/a_addr_reg[2]/CP (dfcrb1)                     0.00       0.00 r
+  U_control/a_addr_reg[2]/QN (dfcrb1)                     0.27       0.27 f
+  U_control/a_addr[2] (risc8_control)                     0.00       0.27 f
+  U_regb_biu/a_addr[2] (risc8_regb_biu)                   0.00       0.27 f
+  U_regb_biu/U234/Z (bufbd1)                              0.11 *     0.38 f
+  U_regb_biu/U44/ZN (invbd2)                              0.08 *     0.45 r
+  U_regb_biu/U120/Z (an12d2)                              0.19 *     0.64 f
+  U_regb_biu/U161/Z (an03d2)                              0.18 *     0.82 f
+  U_regb_biu/U92/ZN (aoi222d1)                            0.51 *     1.33 r
+  U_regb_biu/U184/ZN (nd02d2)                             0.06 *     1.40 f
+  U_regb_biu/a_data[1] (risc8_regb_biu)                   0.00       1.40 f
+  U_alu/a_data[1] (risc8_alu)                             0.00       1.40 f
+  U_alu/U50/ZN (nd02d1)                                   0.04 *     1.44 r
+  U_alu/U149/ZN (nd03d0)                                  0.09 *     1.53 f
+  U_alu/U106/ZN (aoim3m11d4)                              0.26 *     1.79 r
+  U_alu/U255/ZN (oan211d1)                                0.24 *     2.03 f
+  U_alu/U254/Z (aor22d1)                                  0.19 *     2.22 f
+  U_alu/U145/ZN (nd02d1)                                  0.05 *     2.27 r
+  U_alu/U147/ZN (nd03d0)                                  0.10 *     2.36 f
+  U_alu/U253/Z (aor221d1)                                 0.26 *     2.63 f
+  U_alu/U211/ZN (nd02d1)                                  0.06 *     2.69 r
+  U_alu/U71/ZN (nd02d1)                                   0.11 *     2.79 f
+  U_alu/alu_out[0] (risc8_alu)                            0.00       2.79 f
+  U_regb_biu/alu_out[0] (risc8_regb_biu)                  0.00       2.79 f
+  U_regb_biu/U68/ZN (mi02d1)                              0.25 *     3.04 r
+  U_regb_biu/U150/ZN (inv0d1)                             0.18 *     3.22 f
+  U_regb_biu/U596/Z (aor222d1)                            0.39 *     3.61 f
+  U_regb_biu/pc_reg[0]/D (dfcrq1)                         0.00 *     3.61 f
+  data arrival time                                                  3.61
+
+  clock clk (rise edge)                                   4.00       4.00
+  clock network delay (ideal)                             0.00       4.00
+  clock uncertainty                                      -0.30       3.70
+  U_regb_biu/pc_reg[0]/CP (dfcrq1)                        0.00       3.70 r
+  library setup time                                     -0.09       3.61
+  data required time                                                 3.61
+  --------------------------------------------------------------------------
+  data required time                                                 3.61
+  data arrival time                                                 -3.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
