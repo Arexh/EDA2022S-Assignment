@@ -1,0 +1,2 @@
+run:
+	pt_shell -f ./pt.tcl
