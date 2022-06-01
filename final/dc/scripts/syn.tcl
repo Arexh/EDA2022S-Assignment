@@ -3,7 +3,7 @@
 #   Company:  SUS TECH                                                 #		
 #   author:   Wu Peilin                                                #
 #   Version   1.0                                                      #
-#   Date:     20220424                                                 #
+#   Date:     20220601                                                 #
 ########################################################################
 
 ########################################################################
@@ -59,7 +59,6 @@ set_max_transition 2.0 $design_name
 set_max_fanout 20 $design_name
 
 set_max_area   8000
-set_max_delay  0.8 -to [all_outputs]
 
 # No clock buffers allowed for regular logic paths.
 #set_dont_use [get_cells slow/CLKBUF*]

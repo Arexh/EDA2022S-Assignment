@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running pt_shell Version O-2018.06-SP4 for linux64 -- Nov 30, 2018
-#@ # Date:   Mon May 30 16:23:58 2022
+#@ # Date:   Wed Jun  1 18:53:18 2022
 #@ # Run by: eda14@yelab
 #@ 
 
@@ -890,5 +890,4 @@ source -echo -verbose ./pt.tcl
 #@ report_constraint -all_violators -nosplit -verbose > ./reports/report_constraints_detail.rpt
 #@ report_timing -delay_type max > ./reports/report_timing_max.rpt
 #@ report_timing -delay_type min > ./reports/report_timing_min.rpt
-#@ save_session reports/pt.RISC8
 #@ exit

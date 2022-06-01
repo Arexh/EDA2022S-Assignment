@@ -1,2 +1,2 @@
-create_power_straps -direction horizontal -start_at 10 -num_placement_strap 4 -increment_x_or_y 16 -nets {VDD VSS} -layer METAL3 -width 3
-create_power_straps -direction vertical -start_at 10 -num_placement_strap 4 -increment_x_or_y 16 -nets {VDD VSS} -layer METAL4 -width 3
+create_power_straps  -direction horizontal  -start_at 70 -num_placement_strap 6 -increment_x_or_y 70 -nets  {VSS VDD}  -layer METAL3 -width 4
+create_power_straps  -direction vertical    -start_at 70 -num_placement_strap 6 -increment_x_or_y 70 -nets  {VSS VDD}  -layer METAL4 -width 4

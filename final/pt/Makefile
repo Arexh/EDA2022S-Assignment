@@ -3,4 +3,4 @@ run:
 clean_temp:
 	rm *.log
 clean:
-	rm -rf *.log reports
+	rm -rf *.log reports/*

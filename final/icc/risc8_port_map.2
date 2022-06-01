@@ -1,0 +1,12 @@
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/IN0   $svf_impl/risc8/U_regb_biu/IN0
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/a_addr[1]   $svf_impl/risc8/U_regb_biu/a_addr[1]
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/IN1   $svf_impl/risc8/U_regb_biu/IN1
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/w_addr[2]   $svf_impl/risc8/U_regb_biu/w_addr[2]
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/IN2   $svf_impl/risc8/U_regb_biu/IN2
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/a_addr[3]   $svf_impl/risc8/U_regb_biu/a_addr[3]
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/IN3   $svf_impl/risc8/U_regb_biu/IN3
+set_user_match   -inverted   $svf_ref/risc8/U_regb_biu/a_addr[0]   $svf_impl/risc8/U_regb_biu/a_addr[0]
+guide_constraints -body { U_control } -equivalent { U_control/rst_n    U_control/IN7 }
+
+#-------------------------------------------------------------------
+
