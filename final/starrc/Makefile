@@ -1,4 +1,4 @@
 run:
 	StarXtract -clean ./starrc.cmd
-clean_temp:
-	rm -rf .??* starrc_dir RISC8_routed.gpd
+clean:
+	rm -rf .??* starrc_dir RISC8_routed.gpd RISC_CHIP.summary* max.spef

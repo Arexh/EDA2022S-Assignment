@@ -60,23 +60,8 @@ set_max_fanout 20 $design_name
 
 set_max_area   8000
 
-# No clock buffers allowed for regular logic paths.
-#set_dont_use [get_cells slow/CLKBUF*]
-#set_dont_use [get_cells slow/CLKINV*]
-#no low power cells
-#set_dont_use [get_cells slow/*XL]
-#no scan cells
-#set_dont_use [get_cells slow/SDFF*]
-#set_dont_use [get_cells slow/SEDFF*]
-#no negative_triggered cells
-#set_dont_use [get_cells slow/*DFFN*]
-# set dont touch cells
-
 # Drop into interactive mode for compile & optimize:
 compile
-#compile_ultra
-# ungroup -all -flatten
-# compile -map_effort high 
 
 ########################################################################
 ###      4.  report design&lib information                           ###
@@ -94,17 +79,10 @@ report_constraint -all_violators > $work_path/reports/$design_name.violator
 ########################################################################
 ###      5.  Write file for use in other tools                       ###
 ########################################################################
-#write -format ddc -hierarchy -output "$work_path/output/$design_name.ddc"
-#write -format db -hierarchy -xg_force_db -output "$work_path/output/$design_name.db"
-#write -format db -hierarchy -output "$work_path/output/$design_name.db"
 write -format verilog -hierarchy -output "$work_path/outputs/$design_name.v"
 write_sdf -version 2.1 "$work_path/outputs/$design_name.sdf"
-#write_parasitics -format reduced -output "$work_path/output/$design_name.spef"
 write_sdc "$work_path/outputs/$design_name.sdc"
 write_sdf "$work_path/outputs/$design_name.sdf"
-# Quit DC:
- exit
+exit
 
 sh date >> $work_path/outputs/$design_name.date
-#remove_design -all
-

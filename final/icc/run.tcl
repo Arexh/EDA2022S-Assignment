@@ -43,20 +43,36 @@ source scripts/opt_ctrl.tcl
 source scripts/zic_timing.tcl
 exec cat zic.timing
 
+remove_ideal_network [get_ports scan_en]
+
 save_mw_cel -as RISC8_data_setup
 
 ######################################################################
 # Initialize Floorplan
 ######################################################################
 # Create corners and P/G pads and define all pad cell locations:
-source -echo scripts/io_constraints.tcl
+source -echo scripts/pad_cell_cons.tcl
 
-create_floorplan -control_type width_and_height -core_width 500 -core_height 500
+create_floorplan -core_utilization 0.8 -left_io2core 15.0 -bottom_io2core 15.0 -right_io2core 15.0 -top_io2core 15.0
+
+insert_pad_filler -cell "pfeed10000 pfeed05000 pfeed02000 pfeed01000 pfeed00500 pfeed00200 pfeed00100 pfeed00050 pfeed00010 pfeed00005"
 
 # Connect power ground
 source -echo scripts/connect_pg.tcl
+
+create_pad_rings
+
+source -echo scripts/preplace_macros.tcl
+
+source -echo scripts/keepout.tcl
+
 # Build power plan structure
 source -echo scripts/pns.tcl
+
+commit_fp_rail
+
+preroute_instances
+preroute_standard_cells -fill_empty_rows -remove_floating_pieces
 
 set_pnet_options -complete "METAL4 METAL5"
 

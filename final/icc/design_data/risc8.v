@@ -3010,6 +3010,56 @@ module risc8 ( cycle, write, ifetch, iack, ie, address, data_out, clk, rst_n,
   wire   [1:0] inc_pc;
   wire   SYNOPSYS_UNCONNECTED__0;
 
+  pc3d01 clk_iopad ( .PAD(clk) );
+  pc3d01 rst_n_iopad ( .PAD(rst_n) );
+  pc3d01 nmi_iopad ( .PAD(nmi) );
+  pc3d01 int_iopad ( .PAD(int) );
+  pc3d01 ready_iopad ( .PAD(ready) );
+  pc3d01 scan_in_iopad ( .PAD(scan_in) );
+  pc3d01 scan_en_iopad ( .PAD(scan_en) );
+  pc3d01 scan_mode_iopad ( .PAD(scan_mode) );
+  
+  pc3d01 data_in_iopad_7 ( .PAD(data_in[7]) );
+  pc3d01 data_in_iopad_6 ( .PAD(data_in[6]) );
+  pc3d01 data_in_iopad_5 ( .PAD(data_in[5]) );
+  pc3d01 data_in_iopad_4 ( .PAD(data_in[4]) );
+  pc3d01 data_in_iopad_3 ( .PAD(data_in[3]) );
+  pc3d01 data_in_iopad_2 ( .PAD(data_in[2]) );
+  pc3d01 data_in_iopad_1 ( .PAD(data_in[1]) );
+  pc3d01 data_in_iopad_0 ( .PAD(data_in[0]) );
+
+  pc3d01 address_iopad_15 ( .PAD(address[15]) );
+  pc3d01 address_iopad_14 ( .PAD(address[14]) );
+  pc3d01 address_iopad_13 ( .PAD(address[13]) );
+  pc3d01 address_iopad_12 ( .PAD(address[12]) );
+  pc3d01 address_iopad_11 ( .PAD(address[11]) );
+  pc3d01 address_iopad_10 ( .PAD(address[10]) );
+  pc3d01 address_iopad_9  ( .PAD(address[9]) );
+  pc3d01 address_iopad_8  ( .PAD(address[8]) );
+  pc3d01 address_iopad_7  ( .PAD(address[7]) );
+  pc3d01 address_iopad_6  ( .PAD(address[6]) );
+  pc3d01 address_iopad_5  ( .PAD(address[5]) );
+  pc3d01 address_iopad_4  ( .PAD(address[4]) );
+  pc3d01 address_iopad_3  ( .PAD(address[3]) );
+  pc3d01 address_iopad_2  ( .PAD(address[2]) );
+  pc3d01 address_iopad_1  ( .PAD(address[1]) );
+  pc3d01 address_iopad_0  ( .PAD(address[0]) );
+  
+  pc3d01 data_out_iopad_7 ( .PAD(data_out[7]) );
+  pc3d01 data_out_iopad_6 ( .PAD(data_out[6]) );
+  pc3d01 data_out_iopad_5 ( .PAD(data_out[5]) );
+  pc3d01 data_out_iopad_4 ( .PAD(data_out[4]) );
+  pc3d01 data_out_iopad_3 ( .PAD(data_out[3]) );
+  pc3d01 data_out_iopad_2 ( .PAD(data_out[2]) );
+  pc3d01 data_out_iopad_1 ( .PAD(data_out[1]) );
+  pc3d01 data_out_iopad_0 ( .PAD(data_out[0]) );
+
+  pc3d01 cycle_iopad ( .PAD(cycle) );
+  pc3d01 write_iopad ( .PAD(write) );
+  pc3d01 ifetch_iopad ( .PAD(ifetch) );
+  pc3d01 iack_iopad ( .PAD(iack) );
+  pc3d01 ie_iopad ( .PAD(ie) );
+  
   risc8_alu U_alu ( .next_psw(next_psw), .alu_out(alu_out), .divide_by_0(
         divide_by_0), .clk(clk), .rst_n(n18), .a_src({1'b0, a_src[0]}), 
         .b_src(b_src), .carry_src(carry_src), .alu_cmd(alu_cmd), .invert_b(

@@ -3,7 +3,7 @@ read_verilog ../icc/results/RISC8.gv
 current_design risc8
 link
 read_parasitics -format SPEF ../starrc/max.spef
-read_sdc ../icc/design_data/risc8.sdc
+read_sdc ./risc8.sdc
 set_propagated_clock [all_clocks]
 update_timing -full
 check_timing -verbose 
